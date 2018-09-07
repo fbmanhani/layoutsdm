@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/nomeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/nome"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:id="@+id/nomeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_below="@id/nomeTextView"/>
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/email"
+        android:layout_below="@id/nomeEditText"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/emailTextView"/>
+
+    <TextView
+        android:id="@+id/foneTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/telefone"
+        android:layout_below="@id/emailEditText"/>
+
+    <EditText
+        android:id="@+id/foneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_below="@id/foneTextView"/>
+
+    <CheckBox
+        android:id="@+id/notificacoesCheckbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/receber_notificaes"
+        android:layout_below="@id/foneEditText"/>
+
+    <RadioGroup
+        android:id="@+id/notificacoesRadioGroup"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notificacoesCheckbox">
+        <RadioButton
+            android:id="@+id/emailRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"/>
+        <RadioButton
+            android:id="@+id/foneRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/telefone"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/limparButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/limpar"
+        android:onClick="limparFormulario"
+        android:layout_below="@id/notificacoesRadioGroup"/>
+
+    <Button
+        android:id="@+id/salvarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salvar"
+        android:onClick="salvarFormulario"
+        android:layout_below="@id/notificacoesRadioGroup"
+        android:layout_toRightOf="@id/limparButton"/>
+
+</RelativeLayout>
