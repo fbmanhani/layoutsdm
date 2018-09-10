@@ -21,19 +21,6 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName" />
 
-        <TextView
-            android:id="@+id/emailTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/email"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/emailEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress" />
-
         <LinearLayout
             android:id="@+id/foneLinearLayout"
             android:layout_width="match_parent"
@@ -46,6 +33,19 @@
             android:layout_height="wrap_content"
             android:onClick="adicionarTelefone"
             android:text="@string/adicionar_telefone" />
+
+        <LinearLayout
+            android:id="@+id/emailLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/addEmailButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="adicionarEmail"
+            android:text="@string/adicionar_email" />
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -7,6 +7,7 @@
     <string name="limpar">Limpar</string>
     <string name="salvar">Salvar</string>
     <string name="adicionar_telefone">Adicionar Telefone</string>
+    <string name="adicionar_email">Adicionar Email</string>
     <string-array name="tipoTelefone">
         <item>Fixo</item>
         <item>Celular</item>
